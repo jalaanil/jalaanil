@@ -1,0 +1,49 @@
+
+steps to create resources :
+
+setenv.cmd
+
+terraform init
+
+terraform plan -out my.tfplan
+
+terraform apply
+
+terraform destory
+
+----
+
+vm will be created
+
+
+
+
+--------------
+
+connect to vm using putty :
+
+install java
+install jdk 
+
+- sudo apt-get update
+- sudo apt-get install openjdk-8-jdk
+
+
+mkdir myserver
+
+sftp to that vm and copy azure/vm01_java_test files to .../myserver directory and use the commands in the commands.txt files
+
+
+
+# to start test web server without db connection
+java -classpath  .:  TestWebServer
+
+
+to access from the web page
+
+http://168.62.172.110:8000/test
+
+
+
+java -classpath  d:/cloud/azure/vm01_java_test/ojdbc8.jar.: TestWebServer 192.168.0.45
+

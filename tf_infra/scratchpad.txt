@@ -1,0 +1,42 @@
+#  subscription_id = "b483ceb2-d286-400a-bcae-7d8fd01b0d75"
+#  client_id       = "40cb5fa5-6890-4bb8-8076-92dbaf67b109"
+
+#  client_secret   = "M.l-PD_2w-UsHEL81Yb-JZ~JHv~1JBO8vg"
+#  tenant_id       = "d68a238a-c112-4e92-82be-5f67eb3da666"
+
+
+---
+
+ssh -i <private key path> azureuser@40.114.27.175
+
+ajvm01 - Cloudvirtual01
+
+
+23.100.57.207
+
+
+http://23.100.57.207:8000/test
+
+http://40.88.7.178/test
+
+java -classpath  .:  TestWebServer
+
+---
+
+
+vm create links
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine
+https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure
+
+
+connect using ssh key with putty
+https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/
+
+-------------
+
+
+install jdk 
+
+sudo apt-get update
+
+sudo apt-get install openjdk-8-jdk
